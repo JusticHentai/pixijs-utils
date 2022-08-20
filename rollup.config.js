@@ -14,10 +14,6 @@ export default [
         file: './dist/my-component.js',
         format: 'es',
       },
-      {
-        file: './dist/my-component.cjs',
-        format: 'cjs',
-      },
     ],
     plugins: [
       // 使得 rollup 支持 commonjs 规范，识别 commonjs 规范的依赖
