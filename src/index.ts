@@ -1,4 +1,6 @@
+import { Application } from 'pixi.js'
 import { DefaultOptions, InnerOptions, Options } from './types'
+import addImage, { Options as AddImageOptions } from './utils/addImage'
 import getElementSize from './utils/getElementSize'
 import pixijsInit from './utils/pixijsInit'
 
@@ -17,14 +19,25 @@ export default class PixiUtils {
     this.options = { ...innerOptions, width, height }
   }
 
+  renderer!: Application
   init(): PixiUtils {
-    const { width, height } = this.options
+    const { width, height, el } = this.options
 
-    pixijsInit({
+    this.renderer = pixijsInit({
       width,
       height,
     })
 
+    console.log(this.renderer)
+
+    el.appendChild(this.renderer.view)
+
     return this
+  }
+
+  addImage(options: AddImageOptions) {
+    const sprite = addImage(options)
+
+    this.renderer.stage.addChild(sprite)
   }
 }
