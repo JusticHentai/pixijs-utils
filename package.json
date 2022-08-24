@@ -22,7 +22,8 @@
     "build": "rollup -c rollup.config.js"
   },
   "dependencies": {
-    "pixi.js": "^6.5.1"
+    "pixi.js": "^6.5.1",
+    "qrcode": "^1.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
