@@ -1,6 +1,6 @@
 {
   "name": "@justichentai/pixijs-utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "基于pixijs的工具库，封装常用行为和动画，旨在使用pixijs更简单;A library of utils based on pixijs,encapsulating common behaviours and animations, designed to make using pixijs easier",
   "keywords": [
     "justichentai",
@@ -22,7 +22,7 @@
     "build": "rollup -c rollup.config.js"
   },
   "dependencies": {
-    "pixi.js": "^6.5.1",
+    "pixi.js": "^6.5.2",
     "qrcode": "^1.5.1"
   },
   "devDependencies": {
