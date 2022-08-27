@@ -16,8 +16,7 @@
   "license": "ISC",
   "author": "justichentai",
   "type": "module",
-  "main": "dist/my-component.js",
-  "typings": "dist/my-component.d.ts",
+  "main": "index.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js"
   },
@@ -37,7 +36,7 @@
     "rollup": "^2.77.2",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.31.2",
+    "rollup-plugin-typescript2": "^0.33.0",
     "typescript": "^4.7.4"
   }
 }
